@@ -1,30 +1,42 @@
 <template>
   <nav>
     <ul>
-      <li><router-link to="/">Profil</router-link></li>
-      <li><router-link to="/formation">Formation</router-link></li>
-      <li><router-link to="/experience">Expérience</router-link></li>
-      <li><router-link to="/contact">Contact</router-link></li>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#competences-formation">Compétences de la formation</a></li>
+      <li><a href="#competences-informatiques">Compétences informatiques</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#centres-interets">Centres d'intérêts</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </template>
 
 <style scoped>
 nav {
-  background: #42b983;
-  padding: 1rem;
+  background-color: #1b2a4e; /* Bleu foncé */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 ul {
-  list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
 }
 li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 li a:hover {
-  text-decoration: underline;
+  color: #4a90e2; /* Bleu clair pour le hover */
 }
 </style>
