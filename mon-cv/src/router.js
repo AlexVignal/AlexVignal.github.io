@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from './views/Home.vue';
 import CV from './views/CV.vue';
 import Contact from './views/Contact.vue';
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // Remplace createWebHistory()
   routes: [
     { path: '/', component: Home },
     { path: '/cv', component: CV },
