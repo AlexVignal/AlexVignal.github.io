@@ -4,7 +4,7 @@ import CV from './views/CV.vue';
 import Contact from './views/Contact.vue';
 
 const router = createRouter({
-  history: createWebHashHistory(), // Remplace createWebHistory()
+  history: createWebHashHistory(), 
   routes: [
     { path: '/', component: Home },
     { path: '/cv', component: CV },
