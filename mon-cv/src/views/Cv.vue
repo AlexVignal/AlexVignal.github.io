@@ -2,7 +2,7 @@
   <Navbar />
   <div class="cv-page">
     <h2>Mon CV</h2>
-    <a href="/src/images/CV_VignalAlexandre.pdf" download class="download-button">Télécharger le CV</a>
+    <a href="../images/CV_VignalAlexandre.pdf" download class="download-button">Télécharger le CV</a>
   </div>
 </template>
 
