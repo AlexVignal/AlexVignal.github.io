@@ -4,10 +4,8 @@
       <li><router-link to="/">Accueil</router-link></li>
       <li><router-link to="/#formation">Formation</router-link></li>
       <li><router-link to="/#competences-formation">Compétences de la formation</router-link></li>
-      <li><router-link to="/#competences-informatiques">Compétences informatiques</router-link></li>
       <li><router-link to="/#projets">Projets</router-link></li>
       <li><router-link to="/#experience">Expérience</router-link></li>
-      <li><router-link to="/#interets">Centres d'intérêts</router-link></li>
       <li><router-link to="/cv">CV</router-link></li>
       <li><router-link to="/contact">Contact</router-link></li>
     </ul>

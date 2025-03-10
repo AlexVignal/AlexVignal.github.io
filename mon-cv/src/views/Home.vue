@@ -30,10 +30,8 @@ import Navbar from '../components/Navbar.vue';
 import Profil from '../components/Profil.vue';
 import Formation from '../components/Formation.vue';
 import CompetencesFormation from '../components/CompetencesFormation.vue';
-import CompetencesInformatiques from '../components/CompetencesInformatiques.vue';
 import Projets from '../components/Projets.vue';
 import Experience from '../components/Experience.vue';
-import Interets from '../components/Interets.vue';
 </script>
 
 <style>
