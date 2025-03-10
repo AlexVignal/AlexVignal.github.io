@@ -1,42 +1,43 @@
 <template>
-  <nav>
+  <nav class="navbar">
     <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#formation">Formation</a></li>
-      <li><a href="#competences-formation">Compétences de la formation</a></li>
-      <li><a href="#competences-informatiques">Compétences informatiques</a></li>
-      <li><a href="#projets">Projets</a></li>
-      <li><a href="#experience">Expérience</a></li>
-      <li><a href="#centres-interets">Centres d'intérêts</a></li>
-      <li><a href="#cv">CV</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><router-link to="/">Accueil</router-link></li>
+      <li><router-link to="/#formation">Formation</router-link></li>
+      <li><router-link to="/#competences-formation">Compétences de la formation</router-link></li>
+      <li><router-link to="/#competences-informatiques">Compétences informatiques</router-link></li>
+      <li><router-link to="/#projets">Projets</router-link></li>
+      <li><router-link to="/#experience">Expérience</router-link></li>
+      <li><router-link to="/#interets">Centres d'intérêts</router-link></li>
+      <li><router-link to="/cv">CV</router-link></li>
+      <li><router-link to="/contact">Contact</router-link></li>
     </ul>
   </nav>
 </template>
 
 <style scoped>
-nav {
-  background-color: #1b2a4e; /* Bleu foncé */
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0.5rem 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(18, 18, 18, 0.9);
+  padding: 10px 0;
+  z-index: 100;
 }
-ul {
+
+.navbar ul {
   display: flex;
   justify-content: center;
   list-style: none;
   gap: 20px;
 }
-li a {
-  color: #fff;
+
+.navbar a, .navbar .router-link-active {
+  color: #E0E0E0;
   text-decoration: none;
-  font-weight: bold;
   transition: color 0.3s;
 }
-li a:hover {
-  color: #4a90e2; /* Bleu clair pour le hover */
+
+.navbar a:hover, .navbar .router-link-active {
+  color: #8A2BE2;
 }
 </style>
