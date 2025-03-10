@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from './views/Home.vue';
-import CV from './views/CV.vue';
+import CV from './views/Cv.vue';
 import Contact from './views/Contact.vue';
 
 const router = createRouter({

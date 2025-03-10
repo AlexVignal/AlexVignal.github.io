@@ -3,8 +3,13 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/mon-cv/', // Vérifie que le nom correspond bien au repo GitHub
+  base: '/mon-cv/',
+  optimizeDeps: {
+    include: ['vue']  // 🟣 Forcer l'inclusion de Vue dans le bundle
+  },
   build: {
-    outDir: 'dist', // Assure que le build va bien dans 'dist'
+    commonjsOptions: {
+      include: [/node_modules/],  // 🟣 Gérer les imports CommonJS
+    }
   }
 })
